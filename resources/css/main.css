@@ -1,0 +1,237 @@
+:root {
+    --color-dark: #0b0c10;
+    --color-dark-accent: #1f2833;
+    --color-grey: #c5c6c7;
+    --color-light: #66fcf1;
+    --color-light-accent: #45a29e;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: var(--color-dark);
+    color: var(--color-grey);
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+/* Navbar css */
+
+.navbar {
+    width: 4em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--color-dark-accent);
+    transition: width 500ms ease-in-out;
+}
+
+.navbar:hover {
+    width: 25em;
+}
+
+.nav-detail {
+    display: none;
+    margin-left: 1rem;
+}
+
+.navbar:hover .nav-detail {
+    display: inline;
+}
+
+.nav-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-link {
+    height: 2em;
+    margin: 0.3em auto;
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.nav-link:hover {
+    color: var(--color-light);
+}
+
+.nav-link svg {
+    width: 2em;
+    font-size: 3rem;
+}
+
+.navbar:hover .nav-item {
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+
+.nav-link.nav-logo-holder {
+    width: 100%;
+}
+
+.navbar:hover .nav-logo {
+    -webkit-animation: spin 250ms linear;
+    -moz-animation: spin 250ms linear;
+    animation: spin 250ms linear;
+    width: 80px;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.navbar .nav-logo {
+    margin: 2em auto;
+    display: block;
+    transition: 250ms;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.maincontainer {
+    margin-left: 4em;
+}
+
+
+/* Main content CSS */
+
+.topLogo {
+    margin: 60px auto;
+    display: block;
+}
+
+.header {
+    text-align: center;
+    font-size: 3em;
+    color: var(--color-light);
+}
+
+.workImage {
+    border-radius: 1em;
+    margin: 0 auto;
+    display: block;
+    transition: 0.5s;
+}
+
+.card {
+    position: relative;
+    margin: 30px 10%;
+}
+
+.cardTitle,
+.cardBody,
+.languages {
+    display: none;
+    opacity: 0;
+}
+
+.background {
+    background: var(--color-dark-accent);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 0.5em;
+    transform-origin: center center;
+    transform: scale(0.4, 0.4);
+    transition: transform 500ms;
+}
+
+.card:hover .background {
+    transform: scale(1.1);
+}
+
+.card:hover .workImage {
+    transform: translate(-70%, -60px) scale(0.9);
+}
+
+.card:hover .cardTitle,
+.card:hover .cardBody {
+    display: block;
+    animation: visible 2s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    transform: translate(11%, -50px);
+    width: 36%;
+    color: var(--color-light);
+}
+
+h2.cardTitle {
+    font-size: 2em;
+}
+
+.cardBody {
+    position: absolute;
+    font-size: 1.2rem;
+}
+
+.card:hover .cardBody {
+    width: 60%;
+    top: 60px;
+    right: 15px;
+}
+
+.languages {
+    color: var(--color-light-accent);
+}
+
+.card:hover .languages {
+    display: flex;
+    animation: visible 2s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    font-size: 3rem;
+    right: 0;
+    bottom: 0;
+    gap: 20px;
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
