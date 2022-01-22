@@ -3,41 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Broadbent</title>
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
-    </style>
-    <link rel="stylesheet" href="resources/css/main.css">
-    <script src="https://kit.fontawesome.com/d2208c58ee.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
-    <div class="navbar">
-        <ul class="nav-container">
-            <li class="nav-item nav-logo-holder">
-                <a href="/"><img class="nav-logo" src="resources/img/B icon.svg" alt="" width="60px"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/"><i class="far fa-user-circle"></i>
-                    <span class="nav-detail">About me</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/my-work.html"><i class="far fa-folder-open"></i>
-                    <span class="nav-detail">My Work</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/contact"><i class="far fa-envelope"></i>
-                    <span class="nav-detail">Contact</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="maincontainer">
-        <img class="topLogo" src="resources/img/Full name logo.svg" alt="" width="60%">
-        <h1 class="header">Look at my work</h1>
+    <div id="fullpage">
+        <div class="section active" id="section0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md">
+                        <img src="/img/profile-photo.jpg" alt="" id="profilePhoto" class="rounded-circle w-50 my-3">
+                        <h1>Ben Broadbent</h1>
+                        <h2>About me</h2>
+                    </div>
+                    <div class="col-md">
+                        <p>I am a student at the University Of Bath studying electronic engineering. In addition to this, I spend a large amount of time developing systems.</p>
+                        <div class="row text-center" style="font-size:2rem;">
+                            <div class="col"><i class="fab fa-python"></i></div>
+                            <div class="col"><i class="fa-brands fa-js"></i></div>
+                            <div class="col"><i class="fa-brands fa-html5"></i></div>
+                            <div class="col"><i class="fa-brands fa-bootstrap"></i></div>
+                            <div class="col"><i class="fa-solid fa-font-awesome"></i></div>
+                            <div class="col"><i class="fa-brands fa-css3"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="slide ">
+                <h1>Only text</h1>
+
+            </div>
+            <div class="slide active">
+                <h1>Only text</h1>
+            </div>
+            <div class="slide">
+                <h1>And text</h1>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <h1>No wraps, no extra markup</h1>
+        </div>
     </div>
 </body>
 

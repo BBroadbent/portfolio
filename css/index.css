@@ -1,0 +1,19 @@
+#section0 {
+    background-image: linear-gradient(128deg, #40afff, #3f61ff);
+}
+
+#section1 {
+    background-image: linear-gradient(128deg, #ff9a3f, #ff4b40);
+}
+
+#section2 {
+    background-image: linear-gradient(128deg, #fc40ff, #543fff);
+}
+
+#section3 {
+    background-image: linear-gradient(128deg, #40fff2, #3fbcff);
+}
+
+#profilePhoto {
+    max-width: 250px;
+}
