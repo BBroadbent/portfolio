@@ -17,3 +17,11 @@
 #profilePhoto {
     max-width: 250px;
 }
+
+.fp-slidesNav {
+    text-align: center;
+}
+
+#fp-nav {
+    transition: 0.5s;
+}
